@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio | Madan</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #3d3d3d;
+      color: #ededed;
+      padding: 100px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(61, 61, 61, 0.5); 
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px); 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+       z-index: 1000;
+    }
+
+
+    .logo {
+      font-size: 25px;
+      font-weight: 600;
+      color: #ededed;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .home-content {
+     max-width: 550px;
+     display: flex;
+     flex-direction: column;
+     min-height: 70vh;
+     margin-top: 160px;
+    }
+
+
+    .home-content h6 {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #ededed;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .project {
+      margin-bottom: 30px;
+      min-height: 70vh;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: white;
+      color: #3d3d3d;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #5a5a5a;
+      color: #ededed;
+    }
+    .project{
+        text-align: center;
+    }
+    .certifications {
+        text-align: center;
+        min-height: 70vh;
+    }
+    ul {
+         padding: 0;
+         list-style-position: inside;
+         text-align: center;
+        }
+
+    li {
+         margin-bottom: 15px;
+        }
+    .skills ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skills li {
+      list-style: none;
+      padding: 10px 20px;
+      background-color: #4e4e4e;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #bbb;
+    }
+    .contact {
+        text-align: center;
+        min-height: 50vh;
+    }
+    .skills{
+        min-height: 70vh;
+        text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a  class="logo">Madan.</a>
+  </header>
+
+  <div class="container">
+    <div class="home-content">
+      <h1>Hi, I'm Esakkimadan M</h1>
+      <h6>Python Developer</h6>
+      <p>
+        A passionate and motivated aspiring Python Developer. I'm currently first year student of B.Tech and have a strong interest in full-stack development, AI, and problem-solving using Python. I’m eager to learn, contribute to real-world projects, and grow through hands-on experience in a professional environment.
+      </p>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Django</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+
+    <div class="project">
+      <h2>Projects</h2>
+      <h3>Password Generator <span class="date">(April 2025)</span></h3>
+      <p>
+        Developed a Python-based tool to generate secure passwords and evaluate their strength. Implemented custom length, character set selection (uppercase, lowercase, numbers, symbols), and strength validation.
+      </p>
+      <p><strong>Technology Stack:</strong> Django, Python, HTML, CSS, VS Code</p>
+      <a href="https://github.com/ESAKKIMADAN/password_generator" class="button-link" target="_blank">GitHub Repository</a>
+    </div>
+
+<div class="certifications">
+    <h2>Certifications</h2>
+  <ul>
+    <li><strong>Python</strong> – GUVI Geeks Network, IITM Research Park (2025)</li>
+    <li><strong>Object Oriented Programming in C++</strong> – Udemy (2025)</li>
+    <li>
+      <strong>Excel Essential Training</strong> – LinkedIn Learning (NASBA Certified)<br>
+      <a href="https://www.linkedin.com/in/esakkimadan-m/" class="button-link" target="_blank">View All Certificates</a>
+    </li>
+  </ul>
+</div>
+<div class="contact">
+    <h2>Contact</h2>
+    <p> I’m looking for an internship opportunity with your organization. contact me...!</p>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCSnnZJtXzSWvDJrPNWdBrLtKSZTlRrlvrbTZJjsvJNCLjXhNGcSwtRHwKhLMcclfrwhdrv" class="button-link">Email Me</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Madan. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
