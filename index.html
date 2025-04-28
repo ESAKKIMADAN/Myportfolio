@@ -336,45 +336,18 @@
     @media screen and (max-width: 768px) {
       body {
         padding: 80px 15px 20px;
-        overflow-x: hidden;
       }
 
       .container {
         width: 100%;
         max-width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-
-      .home-content, .skills, .project, .certifications, .contact {
-        margin: 20px 0;
-        width: 100%;
-        max-width: 100%;
       }
 
       .home-content {
+        flex-direction: column;
         padding: 20px;
-        margin-top: 0;
-      }
-
-      .skills {
         margin-top: 20px;
-      }
-
-      .project {
-        margin-top: 20px;
-      }
-
-      .certifications {
-        margin-top: 20px;
-      }
-
-      .contact {
-        margin-top: 20px;
-      }
-
-      .header {
-        padding: 15px 20px;
+        text-align: center;
       }
 
       .home-image-container {
@@ -387,18 +360,11 @@
         top: 0;
         transform: none;
         margin: 0 auto 20px auto;
-        border-radius: 15px;
-      }
-
-      .home-image {
-        border-radius: 15px;
       }
 
       .home-text {
         min-height: auto;
-        text-align: center;
         padding: 0;
-        width: 100%;
       }
 
       .home-text h1 {
@@ -414,33 +380,37 @@
       .home-text p {
         font-size: 0.95rem;
         line-height: 1.6;
-        padding: 0 10px;
       }
 
-      .skills h2 {
-        margin-bottom: 20px;
+      .skills {
+        margin-top: 40px;
       }
 
       .skills ul {
-        flex-wrap: wrap;
-        gap: 12px;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+        gap: 10px;
+        padding: 0 10px;
       }
 
       .skills li {
         font-size: 0.9rem;
-        padding: 10px 20px;
-        margin: 0;
+        padding: 8px 16px;
+      }
+
+      .project {
+        margin-top: 40px;
+      }
+
+      .certifications {
+        margin-top: 40px;
+      }
+
+      .contact {
+        margin-top: 40px;
       }
 
       .button-link {
-        padding: 10px 20px;
-        font-size: 0.9rem;
         margin: 15px auto;
-        display: block;
-        width: fit-content;
+        display: inline-block;
       }
     }
   </style>
